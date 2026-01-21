@@ -1,287 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Resume - Jaikrit Singh Khichi</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Resume Jaikrit Singh Khichi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+       <nav id="navbar">
+        <ul>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="certificates.html">Certificates</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-    body {
-      background: #f5f5f5;
-      padding: 20px;
-      display: flex;
-      justify-content: center;
-    }
-
-    .resume-container {
-      max-width: 900px;
-      width: 100%;
-      background: #ffffff;
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
-      border-radius: 8px;
-      overflow: hidden;
-    }
-
-    .left-column {
-      background: #0f172a;
-      color: #e5e7eb;
-      padding: 24px 20px;
-    }
-
-    .right-column {
-      padding: 24px 28px;
-    }
-
-    h1 {
-      font-size: 28px;
-      margin-bottom: 4px;
-      color: #e5e7eb;
-    }
-
-    h2 {
-      font-size: 18px;
-      margin-bottom: 10px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: #e5e7eb;
-    }
-
-    h3 {
-      font-size: 18px;
-      margin-bottom: 4px;
-      color: #111827;
-    }
-
-    h4 {
-      font-size: 14px;
-      margin-bottom: 2px;
-      color: #111827;
-    }
-
-    .section-title {
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-weight: 600;
-      margin: 18px 0 8px;
-      color: #9ca3af;
-    }
-
-    .contact-item,
-    .info-item {
-      font-size: 14px;
-      margin-bottom: 4px;
-      line-height: 1.4;
-      word-break: break-word;
-    }
-
-    .contact-item a {
-      color: #93c5fd;
-      text-decoration: none;
-    }
-
-    .contact-item a:hover {
-      text-decoration: underline;
-    }
-
-    .pill-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-top: 6px;
-    }
-
-    .pill {
-      background: #111827;
-      padding: 4px 8px;
-      border-radius: 999px;
-      font-size: 12px;
-      white-space: nowrap;
-    }
-
-    .lang-list .pill {
-      background: #111827;
-    }
-
-    .right-section {
-      margin-bottom: 18px;
-    }
-
-    .right-section-title {
-      font-size: 16px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin-bottom: 8px;
-      color: #111827;
-    }
-
-    .meta {
-      font-size: 13px;
-      color: #6b7280;
-      margin-bottom: 4px;
-    }
-
-    p {
-      font-size: 14px;
-      line-height: 1.5;
-      color: #374151;
-      margin-bottom: 6px;
-    }
-
-    ul {
-      margin-left: 18px;
-      margin-top: 4px;
-    }
-
-    li {
-      font-size: 14px;
-      line-height: 1.5;
-      color: #374151;
-      margin-bottom: 3px;
-    }
-
-    @media (max-width: 768px) {
-      .resume-container {
-        grid-template-columns: 1fr;
-      }
-
-      .left-column,
-      .right-column {
-        padding: 20px 16px;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="resume-container">
-    <!-- LEFT COLUMN -->
-    <aside class="left-column">
-      <header>
-        <h1>Jaikrit Singh Khichi</h1>
-      </header>
-
-      <!-- CONTACT -->
-      <div class="section">
-        <div class="section-title">Contact</div>
-        <div class="contact-item">Phone: 9875831409</div>
-        <div class="contact-item">
-          Email:
-          <a href="mailto:jkhichi224@gmail.com">jkhichi224@gmail.com</a>
-        </div>
-      </div>
-
-      <!-- LINKS -->
-      <div class="section">
-        <div class="section-title">Links</div>
-        <div class="contact-item">
-          GitHub:
-          <a href="https://github.com/Jaikrit14" target="_blank" rel="noopener noreferrer">
-            github.com/Jaikrit14
-          </a>
-        </div>
-        <div class="contact-item">
-          LinkedIn:
-          <a href="https://www.linkedin.com/in/jaikrit-khichi-4550aa244/" target="_blank" rel="noopener noreferrer">
-            linkedin.com/in/jaikrit-khichi-4550aa244
-          </a>
-        </div>
-      </div>
-
-      <!-- SKILLS -->
-      <div class="section">
-        <div class="section-title">Skills</div>
-        <div class="pill-list">
-          <span class="pill">Web development</span>
-          <span class="pill">AWS</span>
-          <span class="pill">Azure</span>
-          <span class="pill">Cisco Packet Tracer</span>
-          <span class="pill">Java</span>
-          <span class="pill">C++</span>
-          <span class="pill">Python</span>
-          <span class="pill">DSA</span>
-        </div>
-      </div>
-
-      <!-- LANGUAGES -->
-      <div class="section">
-        <div class="section-title">Languages</div>
-        <div class="pill-list lang-list">
-          <span class="pill">English (Fluent)</span>
-          <span class="pill">Hindi (Fluent)</span>
-        </div>
-      </div>
-    </aside>
-
-    <!-- RIGHT COLUMN -->
-    <main class="right-column">
-      <!-- PROFILE -->
-      <section class="right-section">
-        <div class="right-section-title">Profile</div>
-        <p>
-          I’m a Third-year B.Tech student at VIT Bhopal, passionate about technology and always looking
-          for ways to apply what I’ve learned.
-        </p>
-        <p>
-          With a solid foundation in programming, AWS, frontend development, Java, Python, and C++, I love
-          working on projects that challenge me and push my skills further.
-        </p>
-        <p>
-          I’m eager to be involved in extracurricular activities where I can develop my leadership,
-          communication, and teamwork abilities while contributing to the growth of clubs and societies.
-        </p>
-        <p>
-          Above all, I’m committed to learning and growing, both academically and outside the classroom.
-        </p>
-      </section>
-
-      <!-- EDUCATION -->
-      <section class="right-section">
-        <div class="right-section-title">Education</div>
-
-        <div class="edu-item">
-          <h3>VIT Bhopal University</h3>
-          <div class="meta">Bachelor of Technology • 2023 – 2027</div>
-          <p>Currently in 3rd year.</p>
+    <div class="container">
+        <h2>Jaikrit Singh Khichi</h2>
+        <p>Computer Science Student | Aspiring Cloud Engineer | Full-Stack Developer</p>
+    
+        
+        <div class="project" style="margin-top: 1rem;">
+            <h3>👋 A Bit About My Journey</h3>
+            
+            <p>I'm a second-year Computer Science student at VIT Bhopal, currently navigating the exciting chaos of learning cloud computing, real-time systems, and modern web development. Originally from Jaipur, I've spent countless late nights debugging code, exploring AWS services, and building projects that solve real problems.</p>
+            
+            <h3>🚀 What Drives Me</h3>
+            <p>I want to work at the intersection of cloud infrastructure and real-time applications - building systems that scale effortlessly and connect people across the globe. PartyFlix started as a simple idea to watch movies with friends during lockdown, and Friendly Pocket was born from seeing tourists struggle with UPI payments in India. These experiences taught me that the best solutions come from understanding real user pain points.</p>
+            
+            <h3>💼 My Path So Far</h3>
+            <p>From setting up AV systems for MUN events at St. Xavier's to deploying AWS infrastructure during my Worniwell internship, I've learned that technology shines brightest when it solves human problems. Late-night competitive programming sessions sharpened my problem-solving, while cloud certifications opened my eyes to scalable systems thinking.</p>
+            
+            <h3>🌟 Where I'm Headed</h3>
+            <p>I'm seeking cloud engineering or full-stack development internships where I can contribute to production systems while learning from experienced engineers. I thrive in collaborative environments and love turning complex technical challenges into simple, elegant solutions. My goal is to build career-defining projects that make technology more accessible.</p>
+            
         </div>
 
-        <div class="edu-item" style="margin-top: 10px;">
-          <h3>St. Xavier’s School, Jaipur</h3>
-          <div class="meta">1st to 12th • 2011 – 2023</div>
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="projects.html" style="background: #3498db; color: white; padding: 12px 30px; border-radius: 25px; font-size: 1.1rem; text-decoration: none; display: inline-block; margin: 0.5rem;">See What I've Built</a>
+            <a href="https://github.com/Jaikrit1409" target="_blank" style="background: #9b59b6; color: white; padding: 12px 30px; border-radius: 25px; font-size: 1.1rem; text-decoration: none; display: inline-block; margin: 0.5rem;">My Code</a>
+            <a href="contact.html" style="background: #27ae60; color: white; padding: 12px 30px; border-radius: 25px; font-size: 1.1rem; text-decoration: none; display: inline-block; margin: 0.5rem;">Get In Touch</a>
         </div>
-      </section>
+    </div>
 
-      <!-- WORK EXPERIENCE -->
-      <section class="right-section">
-        <div class="right-section-title">Work Experience</div>
 
-        <div class="exp-item">
-          <h3>Cloud Computing Intern</h3>
-          <div class="meta">Worniwell • Remote • [Month Year – Month Year]</div>
-          <p>
-            Interned in the cloud computing domain, gaining hands-on experience with AWS services and cloud
-            infrastructure.
-          </p>
-        </div>
-
-        <div class="exp-item" style="margin-top: 10px;">
-          <h3>Technical Team Member – MUN Club</h3>
-          <div class="meta">St. Xavier’s School • 2019 – 2023</div>
-          <p>
-            Contributed to the technical setup and management for school-level Model United Nations events.
-          </p>
-        </div>
-      </section>
-    </main>
-  </div>
-</body>
+  </body>
 </html>
-
